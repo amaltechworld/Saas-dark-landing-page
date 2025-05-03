@@ -16,8 +16,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={clsx(dmSans.className, "antialiased")}>{children}</body>
-    </html>
+      <html lang="en">
+          <body
+              suppressHydrationWarning
+              className={clsx(dmSans.className, "antialiased")}
+          >
+              {children}
+          </body>
+      </html>
   );
 }

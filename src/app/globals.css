@@ -1,3 +1,54 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.custom-gradient {
+    background: linear-gradient(
+        to right,
+        rgba(254, 236, 255, 0.7),
+        rgba(254, 202, 255, 0.7),
+        rgba(254, 181, 255, 0.7),
+        rgba(255, 219, 231, 0.7),
+        rgba(255, 244, 214, 0.7),
+        rgba(243, 252, 215, 0.7),
+        rgba(210, 245, 238, 0.7),
+        rgba(195, 239, 255, 0.7),
+        rgba(251, 239, 255, 0.7)
+    );
+}
+
+.logo-bg-custom-gradient {
+    background: linear-gradient(
+        to right,
+        rgba(254, 236, 255),
+        rgba(254, 202, 255),
+        rgba(254, 181, 255),
+        rgba(255, 219, 231),
+        rgba(255, 244, 214),
+        rgba(243, 252, 215),
+        rgba(210, 245, 238),
+        rgba(195, 239, 255),
+        rgba(251, 239, 255)
+    );
+}
+
+.hero-bg-custom-gradient {
+background: linear-gradient(
+    to bottom,
+    #000000 0%, 
+    #200D42 34%, 
+    #4F21A1 65%, 
+    #A46EDB 82%
+);
+}
+
+.hero_bg_radial_custom_gradient {
+    background: radial-gradient(
+closest-side, #000 82%, #9560EB
+    )
+}
